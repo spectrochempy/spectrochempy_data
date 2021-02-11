@@ -20,7 +20,7 @@ LATEST="${arr[0]}"
 IFS=$"."
 read -ra tag <<< "$LATEST";
 
-export VERSION="${tag[0]}.${tag[1]}"
+export VERSION="${tag[0]}.${tag[1]}.${tag[2]}"
 
 export CONDA_BLD_PATH="$HOME/conda-bld"
 mkdir -p "$CONDA_BLD_PATH"
