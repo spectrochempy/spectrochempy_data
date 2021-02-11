@@ -1,0 +1,28 @@
+##TITLE= Parameter file, TopSpin 4.1.1
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 8	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= christian
+$$ 2021-02-09 18:28:29.131 +0100  christian@MacCF.local
+$$ /Users/christian/Dropbox/SCP/spectrochempy/scp_data/testdata/nmrdata/bruker/tests/nmr/exam2d_HC/3/pdata/1/clevels
+$$ process /opt/topspin4.1.1/prog/mod/dataserver
+##$LEVELS= (0..255)
+-20152569.2373504 -11195871.798528 -6219928.77696 -3455515.9872 -1919731.104
+-1066517.28 -592509.6 -329172 329172 592509.6 1066517.28 1919731.104 3455515.9872
+6219928.77696 11195871.798528 20152569.2373504 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0
+##$LEVSIGN= 3
+##$MAXLEV= 8
+##$METHOD= 0
+##$NEGBASE= -329172
+##$NEGINCR= 1.8
+##$POSBASE= 329172
+##$POSINCR= 1.8
+##END=
