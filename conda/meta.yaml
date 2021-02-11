@@ -6,14 +6,12 @@ package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
+source:
+  path: ../
+
 build:
   number: 0                           # update build number for minor file fixes
   noarch: generic
-
-requirements:
-  run:
-    - spectrochempy
-  build: []
 
 about:
   home: "https://github.com/spectrochempy/spectrochempy_data"

@@ -8,11 +8,11 @@ PKG_NAME=spectrochempy_data
 OS=noarch
 
 ## get version string from setuptools_scm
-PVS="git describe --tags"
+PVS="$(git describe --tags)"
 echo "Current version string = $PVS"
 
 ## Extract components
-IFS=$"+"
+IFS=$"-"
 read -ra arr <<< "$PVS"
 
 ## latest version string
@@ -20,10 +20,7 @@ LATEST="${arr[0]}"
 IFS=$"."
 read -ra tag <<< "$LATEST";
 
-VERSION="${tag[0]}.${tag[1]}.${tag[2]}"
-PKG_NAME_VERSION="$PKG_NAME-$VERSION.tar.bz2"
-
-export VERSION=$VERSION
+export VERSION="${tag[0]}.${tag[1]}"
 
 export CONDA_BLD_PATH="$HOME/conda-bld"
 mkdir -p "$CONDA_BLD_PATH"
@@ -32,13 +29,11 @@ mkdir -p "$CONDA_BLD_PATH"
 conda update -q -n base conda
 conda config -q --set anaconda_upload no
 conda config -q --set always_yes yes
-conda config -q --add channels conda-forge
-conda config -q --add channels spectrocat
-conda config -q --set channel_priority flexible
 
+conda build conda
+
+PKG_NAME_VERSION="$PKG_NAME-$VERSION-0.tar.bz2"
 PKG_FILE="$CONDA_BLD_PATH/$OS/$PKG_NAME_VERSION"
-echo "---> Building $PKG_FILE using mamba as a solver"
-conda mambabuild conda
 
-echo "---> Uploading $PKG_FILE"
-# anaconda -t "$CONDA_UPLOAD_TOKEN" upload --force -u "$ANACONDA_USER" "$PKG_FILE";
+echo 'anaconda -t "$CONDA_UPLOAD_TOKEN" upload --force -u "$ANACONDA_USER" "$PKG_FILE";'
+anaconda -t "$CONDA_UPLOAD_TOKEN" upload --force -u "$ANACONDA_USER" "$PKG_FILE";
