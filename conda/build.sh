@@ -1,5 +1,5 @@
 #!/bin/bash
-SCP_DATA_DIR=$PREFIX/share/spectrochempy_data/
+SCP_DATA_DIR=$HOME/.spectrochempy/
 mkdir -p $SCP_DATA_DIR
 
 DATA_DIR=$SCP_DATA_DIR/
