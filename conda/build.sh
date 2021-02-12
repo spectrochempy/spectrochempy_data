@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# setup
+
 SCP_DATA_DIR=$HOME/.spectrochempy/
 mkdir -p $SCP_DATA_DIR
 
