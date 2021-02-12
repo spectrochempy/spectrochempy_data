@@ -2,7 +2,7 @@
 
 # setup
 
-SCP_DATA_DIR=$HOME/.spectrochempy/
+SCP_DATA_DIR=$HOME/.spectrochempy/spectrochempy_data/
 mkdir -p $SCP_DATA_DIR
 
 DATA_DIR=$SCP_DATA_DIR/
