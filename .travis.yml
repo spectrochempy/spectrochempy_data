@@ -10,9 +10,6 @@ jobs:
 
 # install miniconda and create environment
 before_install:
-  - echo "Setup display...";
-  - export DISPLAY=':99.0'
-  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
   - echo "Installing miniconda.";
   - mkdir $HOME/download;
   - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O $HOME/download/miniconda.sh;
