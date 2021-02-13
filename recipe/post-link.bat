@@ -1,2 +1,2 @@
-MKLINK /d "%USERPROFILE%\.spectrochempy\testdata" "%PREFIX%\share\spectrochempy_data"
-if errorlevel 1 exit 1
+MKLINK /d "%USERPROFILE%\.spectrochempy\testdata" "%PREFIX%\share\spectrochempy_data\testdata"
+if %errorlevel% neq 0 exit /b %errorlevel%
