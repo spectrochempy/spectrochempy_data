@@ -30,7 +30,7 @@ conda update -q -n base conda
 conda config -q --set anaconda_upload no
 conda config -q --set always_yes yes
 
-conda build conda
+conda build recipe
 
 PKG_NAME_VERSION="$PKG_NAME-$VERSION-0.tar.bz2"
 PKG_FILE="$CONDA_BLD_PATH/$OS/$PKG_NAME_VERSION"
