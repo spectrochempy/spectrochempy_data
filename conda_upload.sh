@@ -21,12 +21,6 @@ read -ra tag <<< "$LATEST";
 
 export VERSION="${tag[0]}.${tag[1]}"
 
-BUILDNUMBER="${tag[2]}"
-if [[ -z $BUILDNUMBER ]]; then
-  BUILDNUMBER="0"
-fi
-export BUILDNUMBER
-
 export CONDA_BLD_PATH="$HOME/conda-bld"
 mkdir -p "$CONDA_BLD_PATH"
 
@@ -37,7 +31,7 @@ conda config -q --set always_yes yes
 
 conda build recipe
 
-PKG_NAME_VERSION="$PKG_NAME-$VERSION-$BUILDNUMBER.tar.bz2"
+PKG_NAME_VERSION="$PKG_NAME-$VERSION-0.tar.bz2"
 
 PKG_FILE="$CONDA_BLD_PATH/noarch/$PKG_NAME_VERSION"
 anaconda -t "$CONDA_UPLOAD_TOKEN" upload --force -u "$ANACONDA_USER" "$PKG_FILE";
