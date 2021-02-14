@@ -31,7 +31,8 @@ conda config -q --set always_yes yes
 
 conda build recipe
 
-PKG_NAME_VERSION="$PKG_NAME-$VERSION-0.tar.bz2"
-
-PKG_FILE="$CONDA_BLD_PATH/noarch/$PKG_NAME_VERSION"
-anaconda -t "$CONDA_UPLOAD_TOKEN" upload --force -u "$ANACONDA_USER" "$PKG_FILE";
+if [[ $TRAVIS_PULL_REQUEST == false ]]; then
+  PKG_NAME_VERSION="$PKG_NAME-$VERSION-0.tar.bz2";
+  PKG_FILE="$CONDA_BLD_PATH/noarch/$PKG_NAME_VERSION";
+  anaconda -t "$CONDA_UPLOAD_TOKEN" upload --force -u "$ANACONDA_USER" "$PKG_FILE";
+fi;
