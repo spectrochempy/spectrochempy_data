@@ -1,7 +1,6 @@
 {% set name = "spectrochempy_data" %}
 {% set version = environ['VERSION'] %}
 
-
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
@@ -10,7 +9,7 @@ source:
   path: ../
 
 build:
-  number: 0                           # update build number for minor file fixes
+  number: 0
   noarch: generic
 
 about:
