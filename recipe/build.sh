@@ -1,4 +1,5 @@
 #!/bin/bash
+
 DATA_DIR=$PREFIX/share/spectrochempy_data/
 mkdir -p $DATA_DIR
 
