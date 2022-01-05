@@ -1,5 +1,5 @@
 {% set name = "spectrochempy_data" %}
-{% set version = environ['VERSION'] %}
+{% set version = 1.2 %}
 
 package:
   name: "{{ name|lower }}"
