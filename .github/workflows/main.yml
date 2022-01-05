@@ -37,30 +37,27 @@ jobs:
 
       - name: Set up version environment variable
         run: |
+          
+          ## Settings (we build essentially a noarch package
+          PKG_NAME=spectrochempy_data
+          
           ## get version string from setuptools_scm
-          PVS="$(python setup.py --version)"
+          PVS="$(git describe --tags)"
           echo "Current version string = $PVS"
-
+          
           ## Extract components
-          IFS=$"+"
+          IFS=$"-"
           read -ra arr <<< "$PVS"
-
+          
           ## latest version string
           LATEST="${arr[0]}"
           IFS=$"."
           read -ra tag <<< "$LATEST";
-          DEVSTRING="${tag[3]}"
-          VERSION="${tag[0]}.${tag[1]}.${tag[2]}"
-          if [[ -z $DEVSTRING ]]; then
-            DEVSTRING="stable"
-          fi
-
-          ## Export variable in the github environment
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-          echo "DEVSTRING=$DEVSTRING" >> $GITHUB_ENV
-
-          echo "$VERSION"
-          echo "$DEVSTRING"
+          
+          export VERSION="${tag[0]}.${tag[1]}"
+          
+          export CONDA_BLD_PATH="$HOME/conda-bld"
+          mkdir -p "$CONDA_BLD_PATH"
 
       - name: Build package
         run: |
