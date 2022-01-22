@@ -50,4 +50,4 @@ jobs:
           ANACONDA_API_TOKEN: ${{ secrets.ANACONDA_UPLOAD_TOKEN }}
         run: |
           conda install anaconda-client
-          anaconda upload --force out/*/*.tar.bz2
+          anaconda upload out/*/*.tar.bz2
