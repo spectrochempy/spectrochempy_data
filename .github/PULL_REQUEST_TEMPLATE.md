@@ -2,3 +2,5 @@
   release. If the current release is 1.4 then 
   the new version should be 1.5 in your PR. This has to be 
   changed in .conda/meta.yaml. 
+- [ ] **Do not forget** to execute the `scripts' to clean the files names and 
+  recreate index files. 

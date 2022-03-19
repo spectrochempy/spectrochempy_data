@@ -1,8 +1,10 @@
-pulseprogram
-acqu2s
-audita.txt
-acqu2
-pdata
-ser
-acqu
-acqus
+files:
+- pulseprogram
+- acqu2s
+- audita.txt
+- acqu2
+- ser
+- acqu
+- acqus
+folders:
+- pdata

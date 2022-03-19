@@ -1,2 +1,4 @@
-TGA
-FTIR
+files: []
+folders:
+- TGA
+- FTIR

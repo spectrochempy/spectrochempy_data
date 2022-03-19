@@ -1,2 +1,4 @@
-proc
-procs
+files:
+- proc
+- procs
+folders: []

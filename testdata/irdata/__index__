@@ -1,9 +1,10 @@
-.DS_Store
-OPUS
-IR.CSV
-interferogram
-subdir
-CO@Mo_Al2O3.SPG
-omnic_series
-nh4y-activation.spg
-carroucell_samp
+files:
+- IR.CSV
+- CO@Mo_Al2O3.SPG
+- nh4y-activation.spg
+folders:
+- OPUS
+- interferogram
+- subdir
+- omnic_series
+- carroucell_samp
