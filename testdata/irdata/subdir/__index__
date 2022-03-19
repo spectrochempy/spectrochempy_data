@@ -1,7 +1,9 @@
-7_CZ0-100_Pd_104.SPA
-7_CZ0-100_Pd_103.SPA
-7_CZ0-100_Pd_102.SPA
-20-50
-7_CZ0-100_Pd_101.SPA
-1-20
-TGAIR-unreadable.srs
+files:
+- 7_CZ0-100_Pd_104.SPA
+- 7_CZ0-100_Pd_103.SPA
+- 7_CZ0-100_Pd_102.SPA
+- 7_CZ0-100_Pd_101.SPA
+- TGAIR-unreadable.srs
+folders:
+- 20-50
+- 1-20

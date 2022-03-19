@@ -1,10 +1,11 @@
-dscdata
-irdata
-.DS_Store
-agirdata
-msdata
-ramandata
-nmrdata
-wodger.spg
-galacticdata
-matlabdata
+files:
+- wodger.spg
+folders:
+- dscdata
+- irdata
+- agirdata
+- msdata
+- ramandata
+- nmrdata
+- galacticdata
+- matlabdata

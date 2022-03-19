@@ -1,4 +1,6 @@
-pdata
-fid
-acqu
-acqus
+files:
+- fid
+- acqu
+- acqus
+folders:
+- pdata

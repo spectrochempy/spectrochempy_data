@@ -1,2 +1,4 @@
-spectre.SPA
-interfero.SPA
+files:
+- spectre.SPA
+- interfero.SPA
+folders: []
