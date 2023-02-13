@@ -1,11 +1,13 @@
-name: build and publish conda package 📦 to Anaconda repository
+name: 📦 build and publish conda package to Anaconda repository
 
 on:
 
   push:
     branches:
       - master
+      - develop
 
+  pull_request:
   release:
     types: [published]
 
@@ -39,6 +41,7 @@ jobs:
 
       - name: Build package
         run: |
+          conda update -n base -c defaults conda
           conda install conda-build conda-verify
           conda-build .conda --output-folder out
 
@@ -48,12 +51,12 @@ jobs:
           ANACONDA_API_TOKEN: ${{ secrets.ANACONDA_UPLOAD_TOKEN }}
         run: |
           conda install anaconda-client
-          anaconda upload --force out/*/*.tar.bz2
+          anaconda upload out/*/*.tar.bz2
 
-      - name: Publish development package
-        if: (github.event_name == 'push')
+      - name: Publish development package only for the development branch
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/develop')
         env:
           ANACONDA_API_TOKEN: ${{ secrets.ANACONDA_UPLOAD_TOKEN }}
         run: |
           conda install anaconda-client
-          anaconda upload -l dev --force out/*/*.tar.bz2
+          anaconda upload -l dev out/*/*.tar.bz2

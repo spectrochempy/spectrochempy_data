@@ -1,0 +1,11 @@
+files:
+- wodger.spg
+folders:
+- dscdata
+- irdata
+- agirdata
+- msdata
+- ramandata
+- nmrdata
+- galacticdata
+- matlabdata
