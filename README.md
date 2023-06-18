@@ -10,3 +10,10 @@ conda update conda
 mamba install -c spectrocat spectrochempy_data
 ```
 
+# Credits
+
+* ramandata/wire files were downloaded from https://github.com/alchem0x2A/py-wdf-reader/releases/download/binary/spectra_files.zip
+and are licensed under the MIT License (MIT)
+* als2004dataset.mat was downloaded from ...
+
+to be completed
