@@ -1,0 +1,10 @@
+13C PEG600_8mm_diff
+insert 8 mm 13C/1H
+tube 5 mm nouveau propre
+15/06/2023
+NS = 160  - D1 = 5 s
+dec 1H on acq
+shims 24/04/2023 2 - 5 mm
+delta = 1 ms
+DELTA = 400 ms
+Gmax = 2900 G/cm - 12 steps

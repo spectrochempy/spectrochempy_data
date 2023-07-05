@@ -1,0 +1,209 @@
+# 1 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+;diffSte
+;new version using built in gradient functions as shapes 13.12.2007 KLZ
+;pl2 --> pl12, lock during DELTA removed, comments improved 29.05.2008 KLZ
+;1D mode included 22.08.08 KLZ
+;variable gradient amplitude ramp included 30.09.09 KLZ 
+;LED included 22.12.2009 KLZ
+;new mc syntax and use of ZGOPTNS rather than loop counters 16.06.11 KLZ
+;ZGOPTNS corrected 22.12.2011 KLZ
+;spoilRec included 28.01.2013 KLZ
+;
+;$CLASS=diff
+;$DIM=2D
+;$TYPE=exp
+
+
+# 1 "/home/nmr/prog/pp/Grad.incl" 1
+;Grad2.incl  -  include file for Gradient Spectroscopy
+;   for TCU3
+;
+;avance-version (07/01/17)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+# 27 "/home/nmr/prog/pp/Grad.incl"
+define list<gradient> EA=<EA>
+
+
+# 31 "/home/nmr/prog/pp/Grad.incl"
+;$Id: Grad2.incl,v 1.13.8.1 2012/01/31 17:56:17 ber Exp $
+# 16 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte" 2
+
+# 1 "/home/nmr/prog/pp/Avance.incl" 1
+;Avance3.incl
+;   for AV III
+;
+;avance-version (07/12/14)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+
+# 165 "/home/nmr/prog/pp/Avance.incl"
+;$Id: Avance3.incl,v 1.9.8.1 2012/01/31 17:56:17 ber Exp $
+# 17 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte" 2
+
+# 1 "/opt/topspin3.2/exp/stan/nmr/lists/pp/Grad_Pulse.incl" 1
+;Grad_Pulse.incl 
+;version 13.12.2007 KLZ 
+;redefinition of sin90 removed 21.01.08 KLZ
+
+# 19 "/opt/topspin3.2/exp/stan/nmr/lists/pp/Grad_Pulse.incl"
+# 20 "/opt/topspin3.2/exp/stan/nmr/lists/pp/Grad_Pulse.incl"
+	
+;-------------only to allow the display of some parameters is ased-----------------
+"cnst31=cnst1+cnst2+cnst3"
+
+
+# 26 "/opt/topspin3.2/exp/stan/nmr/lists/pp/Grad_Pulse.incl"
+"l31=l8+l15"
+
+    "l31=l31+l9" 
+
+;d17: gradient ramp up time
+;d16: gradient ramp down time
+;d18: gradient duration
+;p19: 1 gradient duration
+;cnst1: x-gradient maximum amplitude
+;cnst2: y-gradient maximum amplitude
+;cnst3: z-gradient maximum amplitude
+;cnst11: Watergate x-gradient amplitude
+;cnst12: Watergate y-gradient amplitude
+;cnst13: Watergate z-gradient amplitude
+;cnst31: dummy
+;gpnam5: 1 gradient, sine shape
+;gpx5: x-spoiler gradient amplitude
+;gpy5: y-spoiler gradient amplitude
+;gpz5: z-spoiler gradient amplitude
+;l8: number of points for sin or rampUp points for others
+;l9: ramp down points, not used for sin
+;l15: grad shape type, 0 = sine, 1 = trap, 2 = opt
+;l31: dummy
+# 18 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte" 2
+
+
+define list<gradient> diff_ramp=<$GPNAM31>
+# 22 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+"acqt0=0"
+;-----------------------------------------------------------------------------
+                         
+# 1 "mc_line 25 file /opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte exp. def. part of mc cmd. before ze"
+define delay MCWRK
+define delay MCREST
+define loopcounter t1loop
+"t1loop=0"
+define loopcounter ph1loop
+"ph1loop=0"
+define loopcounter ST1CNT
+"ST1CNT = td1"
+"MCREST = 100u - 100u"
+"MCWRK = 0.250000*100u"
+
+    dccorr
+# 25 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+ze
+# 1 "mc_line 25 file /opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte exp. def. of mc cmd. after ze"
+      MCWRK
+      "phval0 = t1loop * 1"
+      MCWRK setgrad diff_ramp
+# 26 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+10u 
+5m pl1:f1                       		;set rf power level
+
+# 1 "mc_line 29 file /opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte exp. start label for mc cmd."
+start, MCWRK  * 3
+LBLST1, MCWRK
+  MCREST
+# 30 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+
+			1u pl12:f2                  ; decoupler use pl12
+            1u do:f2                    ; decoupler off during d1
+# 39 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+			d1  h2pulse       ;setnmr4|24 or interleave_incr
+			d11 setnmr0|34|32|33 ctrlgrad 0              ; unblank gradient amplifier
+
+;------------------------- Spoiler recovery sequence ------------------------------ 
+# 52 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+
+;-------------------------- Start of dummy gradient loop ---------------------------
+# 67 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+# 68 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+;-------------------------- Start of experiment -----------------------------------
+  			p1:f1 ph1			        ; 90 degree pulse
+            \n	if ( l15 == 1 ) {  d17 grad{ step( cnst1,  l8)* diff_ramp | step( cnst2,  l8)* diff_ramp | step( cnst3,  l8)* diff_ramp }\n  d18 \n  d16 grad{  diff_ramp( cnst1)-step( cnst1,  l8)* diff_ramp |  diff_ramp( cnst2)-step( cnst2,  l8)* diff_ramp |  diff_ramp( cnst3)-step( cnst3,  l8)* diff_ramp }\n	}\n	if ( l15 == 2 ) {\n  d17 grad{ sin90( cnst1,  l8)* diff_ramp | sin90( cnst2,  l8)* diff_ramp | sin90( cnst3,  l8)* diff_ramp }\n  d18 \n  d16 grad{  diff_ramp( cnst1)-step( cnst1,  l9)* diff_ramp |  diff_ramp( cnst2)-step( cnst2,  l9)* diff_ramp |  diff_ramp( cnst3)-step( cnst3,  l9)* diff_ramp }\n	}\n	if ( l15 == 0 ) {\n  d18 grad{ sin( cnst1,  l8)* diff_ramp | sin( cnst2,  l8)* diff_ramp | sin( cnst3,  l8)* diff_ramp }\n	 d16 groff \n	} 
+			d2				            ; gradient stabilisation time
+			d9 setnmr0^34^32^33 ctrlgrad 7			        ; tau
+			p1:f1 ph2			        ; 90 degree pulse
+
+                d11 setnmr0|34|32|33 ctrlgrad 0			; unblank gradient amplifier
+				p19:gp5					; spoiler gradient, sine shape
+				d2                      ; gradient stabilisation time
+
+			d5 setnmr0^34^32^33 ctrlgrad 7			        ; long tau
+  			d11 setnmr0|34|32|33 ctrlgrad 0 			    ; unblank gradient amplifier
+  			p1:f1 ph3			        ; 90 degree pulse
+            \n	if ( l15 == 1 ) {  d17 grad{ step( cnst1,  l8)* diff_ramp | step( cnst2,  l8)* diff_ramp | step( cnst3,  l8)* diff_ramp }\n  d18 \n  d16 grad{  diff_ramp( cnst1)-step( cnst1,  l8)* diff_ramp |  diff_ramp( cnst2)-step( cnst2,  l8)* diff_ramp |  diff_ramp( cnst3)-step( cnst3,  l8)* diff_ramp }\n	}\n	if ( l15 == 2 ) {\n  d17 grad{ sin90( cnst1,  l8)* diff_ramp | sin90( cnst2,  l8)* diff_ramp | sin90( cnst3,  l8)* diff_ramp }\n  d18 \n  d16 grad{  diff_ramp( cnst1)-step( cnst1,  l9)* diff_ramp |  diff_ramp( cnst2)-step( cnst2,  l9)* diff_ramp |  diff_ramp( cnst3)-step( cnst3,  l9)* diff_ramp }\n	}\n	if ( l15 == 0 ) {\n  d18 grad{ sin( cnst1,  l8)* diff_ramp | sin( cnst2,  l8)* diff_ramp | sin( cnst3,  l8)* diff_ramp }\n	 d16 groff \n	} 
+			d2 				            ; gradient stabilisation time
+  			d10 setnmr0^34^32^33 ctrlgrad 7 		    ; tau
+;-------------------------- Start of LED module  -----------------------------------
+# 95 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+# 96 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+;-------------------------- End of LED module  -----------------------------------
+
+		go=start ph31 cpd2:f2           ; start acquisition with decoupling
+
+# 1 "mc_line 103 file /opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte exp. mc cmd. in line"
+  MCWRK  wr #0 if #0 zd 
+
+  "t1loop+=1"
+      MCWRK
+      "phval0 = t1loop * 1"
+      MCWRK setgrad diff_ramp
+  lo to LBLST1 times ST1CNT
+  MCWRK 
+  "t1loop=0"
+  MCWRK
+# 104 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+# 105 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+        100m do:f2                      ; wait for data storage, decoupler off
+
+
+# 114 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+    	100m rf #0 					    ; reset file pointer
+
+	lo to start times l1			    ; l1 = Number of repetitions
+exit
+
+ph11= 0
+ph12= 1
+# 122 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+ph1= 0 0 0 0 2 2 2 2  1 1 1 1 3 3 3 3
+ph2= 1 3 0 2
+ph3= 1 3 0 2
+ph31=0 0 2 2 2 2 0 0  3 3 1 1 1 1 3 3 
+
+
+# 136 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+;pl1: f1 channel - power level for pulse (default)
+;pl2: f2 channel - default not used
+;pl12: f2 channel - decoupling power
+;p1: f1 channel -  90 degree pulse
+;d17: gradient ramp up time
+;d16: gradient ramp down time
+;d18: gradient duration
+;p19: 1 gradient duration
+;d1: relaxation delay; 1-5 * T1
+;d2: gradient stabilisation time
+;d5: DELTA remainder
+;d9: tau remainder
+;d10: tau remainder, used to shift trigger position
+;d11: gradient amplifier unblank delay 200 us
+;d23: spoiler recovery delay
+
+;ns: 16 * n
+;l1: Number of repetitions
+;td1: number of experiments
+;l13: number of dummy gradient pulses
+
+# 159 "/opt/topspin3.2/exp/stan/nmr/lists/pp/diffSte"
+;$Id: diffSte,v 1.7.6.3 2013/02/11 15:38:03 ber Exp $
