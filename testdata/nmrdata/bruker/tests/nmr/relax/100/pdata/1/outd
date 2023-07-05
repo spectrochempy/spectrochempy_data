@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 2	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= dgajan
+$$ 2019-05-24 09:29:18.584 +0200  dgajan@charles
+$$ /opt/topspin/data/Cassandre/nmr/29Si_DNP_Y64_550C/100/pdata/1/outd
+$$ process /opt/topspin3.2/prog/mod/t1
+##$CURPLOT= <printer>
+##$CURPRIN= <$printer>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/1D_BB.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

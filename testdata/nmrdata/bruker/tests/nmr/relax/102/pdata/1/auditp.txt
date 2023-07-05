@@ -1,0 +1,57 @@
+##TITLE= Audit trail, TOPSPIN		Version 3.2
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ /home/nmr/Data/Cassandre/13C_PEG600_8mm_diff/102/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2023-06-16 14:22:32.693 +0200>,<nmr>,<lcs175n>,<go>,<TOPSPIN 3.2>,
+      <created by zg
+	started at 2023-06-16 11:38:49.469 +0200,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       5B 7A 71 48 B3 0D 11 DC 43 1F C5 EE 27 3A 8B BB
+       data hash MD5: 32K * 12
+       3F 7E 65 6C 70 A4 E2 46 3B 97 C4 EB 06 18 75 39>)
+(   2,<2023-06-16 14:23:03.106 +0200>,<nmr>,<lcs175n>,<proc2d>,<TOPSPIN 3.2>,
+      <Start of raw data processing
+       xf2 F2: SI = 64K WDW = 1 LB = 0 FT_mod = 6 PKNL = 1 PHC0 = -143.0221 PHC1 = 115.7184 F1: SI = 16
+       data hash MD5: 64K * 16
+       F5 B2 40 29 68 90 A8 17 D7 1D 2B 91 F2 1D 96 FA>)
+(   3,<2023-06-16 14:45:39.634 +0200>,<nmr>,<lcs175n>,<audit>,<TOPSPIN 3.2>,
+      <user comment:
+       TITLE=13C PEG600_8mm_diff
+       insert 8 mm 13C/1H
+       tube 5 mm nouveau propre
+       15/06/2023
+       NS = 160  - D1 = 5 s
+       dec 1H on acq
+       shims 24/04/2023 2 - 5 mm
+       delta = 1 ms
+       DELTA = 400 ms
+       Gmax = 2900 G/cm - 12 stepsTITLE_END
+       data hash MD5: 64K * 16
+       F5 B2 40 29 68 90 A8 17 D7 1D 2B 91 F2 1D 96 FA>)
+(   4,<2023-06-16 14:45:42.215 +0200>,<nmr>,<lcs175n>,<audit>,<TOPSPIN 3.2>,
+      <user comment:
+       TITLE=13C PEG600_8mm_diff
+       insert 8 mm 13C/1H
+       tube 5 mm nouveau propre
+       15/06/2023
+       NS = 160  - D1 = 5 s
+       dec 1H on acq
+       shims 24/04/2023 2 - 5 mm
+       delta = 1 ms
+       DELTA = 400 ms
+       Gmax = 2900 G/cm - 12 stepsTITLE_END
+       data hash MD5: 64K * 16
+       F5 B2 40 29 68 90 A8 17 D7 1D 2B 91 F2 1D 96 FA>)
+$$ C:/Users/Cassandre/Documents/cassandre/NMR_data/400_MHz_Caen/13C_PEG600_8mm_diff/102/pdata/1/auditp.txt
+(   5,<2023-06-30 15:55:52.068 +0200>,<Cassandre>,<DESKTOP-6P3EJ8D>,<proc2d>,<TopSpin 4.1.1>,
+      <Start of raw data processing
+       xf2 F2: SI = 64K WDW = 1 LB = 0 FT_mod = 6 PKNL = 1 PHC0 = -143.0221 PHC1 = 115.7184 F1: SI = 16
+       data hash MD5: 64K * 16
+       66 1D 0C C6 09 99 4F 2D 3E 51 ED 77 84 CE 88 08>)
+##END=
+
+$$ hash MD5
+$$ 8E BE 89 72 5E AB 7D AD 42 4A 55 85 6B BA 77 9C

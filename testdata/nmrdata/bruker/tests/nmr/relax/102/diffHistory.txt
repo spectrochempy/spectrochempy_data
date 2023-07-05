@@ -1,0 +1,775 @@
+Fri Jun 16 11:32:28 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:32:28 {CEST} 2023 window restarted by procedure up_date new path
+Fri Jun 16 11:32:28 {CEST} 2023 restartWindow:  Active dataset: /home/nmr/Data/Cassandre/13C_PEG600_8mm_diff/102/acqu
+Fri Jun 16 11:32:28 {CEST} 2023 initReadXml
+Fri Jun 16 11:32:28 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:32:28 {CEST} 2023 readPar: for preemp parameter GRADCC found: 1.266e+07
+Fri Jun 16 11:32:28 {CEST} 2023 readPar: for preemp parameter ZGAIN found: 0
+Fri Jun 16 11:32:28 {CEST} 2023 readPar: for preemp parameter ZMEANPWR found: 85
+Fri Jun 16 11:32:28 {CEST} 2023 readPar: preemp parameter ZPEAKPWR set to -1 due to error: ERR_TERM
+Fri Jun 16 11:32:28 {CEST} 2023 readPar: for preemp parameter ZCOILRES found: 0.83
+Fri Jun 16 11:32:28 {CEST} 2023 readPar: for t1par parameter FITTYPE found: 1
+Fri Jun 16 11:32:28 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:28 {CEST} 2023 readPar: for t1par parameter FITTYPE found: 1
+Fri Jun 16 11:32:28 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:28 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:28 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 56
+Fri Jun 16 11:32:28 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar USERA3 12660000.0
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 11 2e-5
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar L 15 0
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 2 0.001
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar L 21 0
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar L 13 0
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar L 9 13
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar PULPROG diffSte
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar USERA2 diffSte
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 5 SINE.100
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar P 19 2000.0
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 10.78
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 5 0.3943575
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 20 0.4
+Fri Jun 16 11:32:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 1 4.000080027706377
+Fri Jun 16 11:32:28 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 8 50 3 1.52e-12 difflist
+Fri Jun 16 11:32:28 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:32:30 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:30 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:34 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:34 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:34 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:34 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:35 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:35 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:35 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:35 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:37 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:37 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:37 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:37 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:40 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:40 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:40 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:32:41 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:41 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:44 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:44 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 34
+Fri Jun 16 11:32:44 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 8
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 8
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 10.78
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:32:44 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:32:44 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 8 50 3 1.52e-12 difflist
+Fri Jun 16 11:32:44 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:32:44 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:32:45 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:45 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 34
+Fri Jun 16 11:32:48 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 8
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 8
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 10.78
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:32:48 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:32:48 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 8 50 3 1.52e-12 difflist
+Fri Jun 16 11:32:48 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:32:48 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:32:48 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:48 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:49 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:49 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:49 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:49 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:32:58 {CEST} 2023 Exit
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 38
+Fri Jun 16 11:32:58 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 8
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 8
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 10.78
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 320
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar L 1 1
+Fri Jun 16 11:32:58 {CEST} 2023 diff-storeparToDisk tcl-storepar DS 0
+Fri Jun 16 11:32:58 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 8 50 3 1.52e-12 difflist
+Fri Jun 16 11:34:10 {CEST} 2023 -----------------------------------------------------------------
+Fri Jun 16 11:34:10 {CEST} 2023 diff version diff-4.13 started from TopSpin version 3.2
+Fri Jun 16 11:34:10 {CEST} 2023 initAcqu: nbl = 1
+Fri Jun 16 11:34:10 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:34:10 {CEST} 2023 initReadXml
+Fri Jun 16 11:34:10 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:34:10 {CEST} 2023 readPar: for preemp parameter GRADCC found: 1.266e+07
+Fri Jun 16 11:34:10 {CEST} 2023 readPar: for preemp parameter ZGAIN found: 0
+Fri Jun 16 11:34:10 {CEST} 2023 readPar: for preemp parameter ZMEANPWR found: 85
+Fri Jun 16 11:34:10 {CEST} 2023 readPar: preemp parameter ZPEAKPWR set to -1 due to error: ERR_TERM
+Fri Jun 16 11:34:10 {CEST} 2023 readPar: for preemp parameter ZCOILRES found: 0.83
+Fri Jun 16 11:34:10 {CEST} 2023 readPar: for t1par parameter FITTYPE found: 1
+Fri Jun 16 11:34:10 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:10 {CEST} 2023 readPar: for t1par parameter FITTYPE found: 1
+Fri Jun 16 11:34:10 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:10 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:10 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 80
+Fri Jun 16 11:34:20 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 0 1.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 1 1.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 2 1.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 3 1.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 4 0.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 5 0.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 6 0.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 7 1.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 8 0.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 9 0.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 10 0.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 11 1.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar USERA3 12660000.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar D 11 2e-5
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar L 15 0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar D 2 0.001
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar L 21 0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar L 13 0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar L 9 13
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar PULPROG diffSte
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar USERA2 diffSte
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 5 SINE.100
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar P 19 2000.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 10.78
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar D 5 0.3943575
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar D 20 0.4
+Fri Jun 16 11:34:20 {CEST} 2023 diff-storeparToDisk tcl-storepar D 1 4.000090027706378
+Fri Jun 16 11:34:20 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 8 50 3 1.52e-12 difflist
+Fri Jun 16 11:34:20 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:34:20 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:34:20 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:20 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 28
+Fri Jun 16 11:34:22 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 10.78
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:34:22 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:34:22 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 8 50 3 1.52e-12 difflist
+Fri Jun 16 11:34:22 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:34:22 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:34:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:23 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:23 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:23 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:23 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 8
+Fri Jun 16 11:34:26 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:26 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 32
+Fri Jun 16 11:34:28 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:34:28 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:34:28 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:34:28 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:34:28 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:34:29 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:29 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:30 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:30 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:30 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:30 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 38
+Fri Jun 16 11:34:36 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 320
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar D 1 4.000090027706378
+Fri Jun 16 11:34:36 {CEST} 2023 diff-storeparToDisk tcl-storepar L 1 1
+Fri Jun 16 11:34:36 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:34:36 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:34:36 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:34:37 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:37 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 32
+Fri Jun 16 11:34:39 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:34:39 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:34:39 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:34:39 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:34:39 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:34:54 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:54 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 40
+Fri Jun 16 11:34:57 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar L 1 1
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar DS 0
+Fri Jun 16 11:34:57 {CEST} 2023 diff-storeparToDisk tcl-storepar D 1 4.000090027706378
+Fri Jun 16 11:34:57 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:34:57 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:34:59 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:34:59 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 0
+Fri Jun 16 11:34:59 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:34:59 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:35:07 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:35:07 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:07 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 36
+Fri Jun 16 11:35:11 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:35:11 {CEST} 2023 diff-storeparToDisk tcl-storepar L 1 1
+Fri Jun 16 11:35:11 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:35:11 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:35:11 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:35:12 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:12 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 32
+Fri Jun 16 11:35:13 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:35:13 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:35:13 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:35:13 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:35:13 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:35:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 34
+Fri Jun 16 11:35:24 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 256
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:35:24 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:35:24 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:35:24 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:35:48 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:48 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:52 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:52 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:52 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:52 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:52 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:52 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:35:58 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:00 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 4
+Fri Jun 16 11:36:00 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:00 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 256
+Fri Jun 16 11:36:00 {CEST} 2023 diff-storeparToDisk tcl-storepar L 1 1
+Fri Jun 16 11:36:00 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:07 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:07 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:07 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:07 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 0
+Fri Jun 16 11:36:07 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:07 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:07 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:07 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:07 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:07 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 36
+Fri Jun 16 11:36:07 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:07 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:36:07 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:36:07 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:36:07 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 256
+Fri Jun 16 11:36:08 {CEST} 2023 diff-storeparToDisk tcl-storepar L 1 1
+Fri Jun 16 11:36:08 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:36:08 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:08 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:10 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 2
+Fri Jun 16 11:36:10 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:10 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 256
+Fri Jun 16 11:36:10 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:10 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:12 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:12 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 32
+Fri Jun 16 11:36:13 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:36:13 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:36:13 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:36:13 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:13 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:18 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:18 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 34
+Fri Jun 16 11:36:19 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 192
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:36:19 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:36:19 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:36:19 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:19 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:22 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 32
+Fri Jun 16 11:36:23 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:36:23 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:36:23 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:36:23 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:23 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:23 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:23 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:24 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:24 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 36
+Fri Jun 16 11:36:24 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:36:24 {CEST} 2023 diff-storeparToDisk tcl-storepar L 1 1
+Fri Jun 16 11:36:24 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:36:24 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:24 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:26 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 2
+Fri Jun 16 11:36:26 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:26 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:36:26 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:26 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:26 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:26 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 32
+Fri Jun 16 11:36:27 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:36:27 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:36:27 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:36:27 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:27 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:28 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 2
+Fri Jun 16 11:36:28 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:28 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:36:28 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:28 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:28 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:28 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 36
+Fri Jun 16 11:36:33 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:36:33 {CEST} 2023 diff-storeparToDisk tcl-storepar L 1 1
+Fri Jun 16 11:36:33 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:36:33 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:33 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:34 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 2
+Fri Jun 16 11:36:34 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:34 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:36:34 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:34 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:35 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 2
+Fri Jun 16 11:36:35 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:35 {CEST} 2023 diff-storeparToDisk tcl-storepar L 1 1
+Fri Jun 16 11:36:35 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:35 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:50 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:50 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 34
+Fri Jun 16 11:36:51 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:36:51 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:36:51 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:36:51 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:51 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:51 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:51 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 34
+Fri Jun 16 11:36:52 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar1 TD 12
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar1 SI 16
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:36:52 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:36:52 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:36:52 {CEST} 2023 FocusOut: diff-storeparToDisk
+Fri Jun 16 11:36:52 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:36:58 {CEST} 2023 Exit
+Fri Jun 16 11:36:58 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 4
+Fri Jun 16 11:36:58 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:36:58 {CEST} 2023 diff-storeparToDisk tcl-storepar NS 160
+Fri Jun 16 11:36:58 {CEST} 2023 diff-storeparToDisk tcl-storepar L 1 1
+Fri Jun 16 11:38:46 {CEST} 2023 -----------------------------------------------------------------
+Fri Jun 16 11:38:46 {CEST} 2023 diff version diff-4.13 started from TopSpin version 3.2
+Fri Jun 16 11:38:46 {CEST} 2023 initAcqu: nbl = 1
+Fri Jun 16 11:38:46 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:38:46 {CEST} 2023 initReadXml
+Fri Jun 16 11:38:46 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Fri Jun 16 11:38:46 {CEST} 2023 readPar: for preemp parameter GRADCC found: 1.266e+07
+Fri Jun 16 11:38:46 {CEST} 2023 readPar: for preemp parameter ZGAIN found: 0
+Fri Jun 16 11:38:46 {CEST} 2023 readPar: for preemp parameter ZMEANPWR found: 85
+Fri Jun 16 11:38:46 {CEST} 2023 readPar: preemp parameter ZPEAKPWR set to -1 due to error: ERR_TERM
+Fri Jun 16 11:38:46 {CEST} 2023 readPar: for preemp parameter ZCOILRES found: 0.83
+Fri Jun 16 11:38:46 {CEST} 2023 readPar: for t1par parameter FITTYPE found: 1
+Fri Jun 16 11:38:46 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:38:46 {CEST} 2023 readPar: for t1par parameter FITTYPE found: 1
+Fri Jun 16 11:38:46 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:38:46 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:38:46 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 80
+Fri Jun 16 11:38:49 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 0 1.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 1 1.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 2 1.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 3 1.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 4 0.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 5 0.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 6 0.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 7 1.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 8 0.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 9 0.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 10 0.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CAGPARS 11 1.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar USERA3 12660000.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar D 11 2e-5
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar L 15 0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar L 8 197
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar D 18 0.0015760000000000001
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar D 21 0.000998219693002881
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar D 2 0.001
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar L 21 0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 31 13C_PEG600_8mm_diff_102
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 0 4.866688743917851
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 1 0.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 2 0.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar CNST 3 97.33579
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar L 13 0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar L 9 13
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar PULPROG diffSte
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar USERA2 diffSte
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar GPNAM 5 SINE.100
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar P 19 2000.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar GPZ 5 8.26
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar GPX 5 0.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar GPY 5 0.0
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar D 16 8e-6
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar D 9 5e-6
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar D 10 5e-6
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar D 5 0.3943575
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar D 20 0.4
+Fri Jun 16 11:38:49 {CEST} 2023 diff-storeparToDisk tcl-storepar D 1 4.000100027706377
+Fri Jun 16 11:38:49 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Fri Jun 16 11:38:50 {CEST} 2023 Exit
+Fri Jun 16 11:38:50 {CEST} 2023 diff-storeparToDisk: readonly = No nparsStore = 0
+Fri Jun 16 11:38:50 {CEST} 2023 store NBL = 1
+Fri Jun 16 11:38:50 {CEST} 2023 t1command = varGrad 400.00 1.00 1070.5839259469224 10 1 12 50 3 1.52e-12 difflist
+Mon Jun 19 09:33:31 {CEST} 2023 -----------------------------------------------------------------
+Mon Jun 19 09:33:31 {CEST} 2023 diff version diff-4.13 started from TopSpin version 3.2
+Mon Jun 19 09:33:31 {CEST} 2023 initAcqu: nbl = 1
+Mon Jun 19 09:33:31 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Mon Jun 19 09:33:31 {CEST} 2023 initReadXml
+Mon Jun 19 09:33:31 {CEST} 2023 checkDims: 2D = 1 2Dp = 1
+Mon Jun 19 09:33:31 {CEST} 2023 readPar: for preemp parameter GRADCC found: 1.266e+07
+Mon Jun 19 09:33:31 {CEST} 2023 readPar: for preemp parameter ZGAIN found: 0
+Mon Jun 19 09:33:31 {CEST} 2023 readPar: for preemp parameter ZMEANPWR found: 85
+Mon Jun 19 09:33:31 {CEST} 2023 readPar: preemp parameter ZPEAKPWR set to -1 due to error: ERR_TERM
+Mon Jun 19 09:33:31 {CEST} 2023 readPar: for preemp parameter ZCOILRES found: 0.83
+Mon Jun 19 09:33:31 {CEST} 2023 readPar: for t1par parameter FITTYPE found: 1
+Mon Jun 19 09:33:31 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:31 {CEST} 2023 readPar: for t1par parameter FITTYPE found: 1
+Mon Jun 19 09:33:31 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:31 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:31 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:33 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:33 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:36 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:36 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:36 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:36 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:36 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12
+Mon Jun 19 09:33:36 {CEST} 2023 CreateDifflist: creating 13C_PEG600_8mm_diff_102 12

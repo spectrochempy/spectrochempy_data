@@ -1,0 +1,47 @@
+##TITLE= Parameter file, TopSpin 3.6.1
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 73	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= dgajan
+$$ 2019-06-24 17:39:32.793 +0200  cassa@LAPTOP-P3356MSQ
+$$ D:/NMR_data/800_MHz_Lyon_DNP/29Si_DNP_Y64_550C/100/pdata/1/t1par
+$$ process C:\Bruker\TopSpin3.6.1\prog\mod\dataserver.exe
+##$BIGDEL= 100
+##$CALCDN= no
+##$COMPNO= 3
+##$CONV= 1e-005
+##$CURSOR= 1
+##$DRIFT= 5
+##$EDGUESS= 0
+##$EDPARM= 0
+##$FCTTYPE= 2
+##$FIDNUMB= 9
+##$FITT1T2= 0
+##$FITTYPE= 1
+##$GAMM= 10000
+##$GRADIEN= 1
+##$GUESSES= (0..23)
+1 1 1 1 1 1 1 1 1 1 1 1 0.1 0.1 0.1 0.1 0.1 0.1 1 1 1 1 1 1
+##$INC= 1
+##$INTRNG= 1
+##$LISTINC= 0.001
+##$LISTTYP= <vdlist>
+##$LITDEL= 10
+##$MAXPNTS= 9
+##$NUMPNTS= 9
+##$NUMTERM= 2
+##$PARM= (0..11)
+0.57291405881868 2.28382578707438 -1.69699115348094 2.31721940911905 2.10726970700134
+2.32316090218839 0 0 0 0 0 0
+##$PDTYP= <pd>
+##$REGIONS= 1
+##$SHOWINT= yes
+##$SHOWPP= yes
+##$SHOWTXT= 1
+##$START= 1
+##$X_END= 50
+##$X_START= 1
+##$Y_END= 5.535943e+010
+##$Y_START= 0
+##END=

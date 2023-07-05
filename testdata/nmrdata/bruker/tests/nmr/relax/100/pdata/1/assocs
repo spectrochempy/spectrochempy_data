@@ -1,0 +1,11 @@
+##TITLE= Parameter file, TopSpin 3.6.1
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= cassa
+$$ 2019-09-29 19:05:27.612 +0200  cassa@LAPTOP-P3356MSQ
+$$ D:/NMR_data/800_MHz_Lyon_DNP/29Si_DNP_Y64_550C/100/pdata/1/assocs
+$$ process C:\Bruker\TopSpin3.6.1\prog\mod\dataserver.exe
+##$MULTDISP= <>
+##END=

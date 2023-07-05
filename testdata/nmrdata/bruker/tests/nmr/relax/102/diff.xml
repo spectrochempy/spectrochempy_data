@@ -1,0 +1,71 @@
+<diff>
+    <XValues>
+        <X i="  0" g="1.44710e+02" q="1.54924e+04" B="3.78701e+09" d="1.00000e+00" D="4.00000e+02"/>
+        <X i="  1" g="3.94669e+02" q="4.22526e+04" B="2.81686e+10" d="1.00000e+00" D="4.00000e+02"/>
+        <X i="  2" g="6.44628e+02" q="6.90129e+04" B="7.51481e+10" d="1.00000e+00" D="4.00000e+02"/>
+        <X i="  3" g="8.94587e+02" q="9.57731e+04" B="1.44725e+11" d="1.00000e+00" D="4.00000e+02"/>
+        <X i="  4" g="1.14455e+03" q="1.22533e+05" B="2.36901e+11" d="1.00000e+00" D="4.00000e+02"/>
+        <X i="  5" g="1.39451e+03" q="1.49294e+05" B="3.51673e+11" d="1.00000e+00" D="4.00000e+02"/>
+        <X i="  6" g="1.64446e+03" q="1.76054e+05" B="4.89044e+11" d="1.00000e+00" D="4.00000e+02"/>
+        <X i="  7" g="1.89442e+03" q="2.02814e+05" B="6.49013e+11" d="1.00000e+00" D="4.00000e+02"/>
+        <X i="  8" g="2.14438e+03" q="2.29574e+05" B="8.31580e+11" d="1.00000e+00" D="4.00000e+02"/>
+        <X i="  9" g="2.39434e+03" q="2.56334e+05" B="1.03674e+12" d="1.00000e+00" D="4.00000e+02"/>
+        <X i=" 10" g="2.64430e+03" q="2.83095e+05" B="1.26451e+12" d="1.00000e+00" D="4.00000e+02"/>
+        <X i=" 11" g="2.89426e+03" q="3.09855e+05" B="1.51487e+12" d="1.00000e+00" D="4.00000e+02"/>
+    </XValues>
+    <nXValues>12</nXValues>
+    <diffVersion>diff-4.13</diffVersion>
+    <ExpTyp>ste</ExpTyp>
+    <gdir>6</gdir>
+    <unblank>0.02</unblank>
+    <intArea>1</intArea>
+    <drift>50</drift>
+    <rspcStart>3</rspcStart>
+    <lock>off</lock>
+    <gradListName>difflist</gradListName>
+    <hardDur>0.0125</hardDur>
+    <led>No</led>
+    <ledDur>2.04</ledDur>
+    <spoilRec>No</spoilRec>
+    <spoilRecDur>100.00</spoilRecDur>
+    <decoupling>on</decoupling>
+    <userPulprog>No</userPulprog>
+    <pulprog>diffSte</pulprog>
+    <attFactor>0.1</attFactor>
+    <exDiffCoff>1.52e-12</exDiffCoff>
+    <calcExDiffCoff>1</calcExDiffCoff>
+    <gradShapeType>0</gradShapeType>
+    <delta>1.00</delta>
+    <gradPulseTime>1.576</gradPulseTime>
+    <DELTA>400.00</DELTA>
+    <tau>2.59<YesNoValue>Yes</YesNoValue>
+    </tau>
+    <trep>5110.55</trep>
+    <dutyCycle>0.00</dutyCycle>
+    <expDur>2h 43m 32s</expDur>
+    <gradRampType>0</gradRampType>
+    <blank1></blank1>
+    <fctType>10</fctType>
+    <gmax>2894.26</gmax>
+    <gstart>144.71<YesNoValue>Yes</YesNoValue>
+    </gstart>
+    <ngrad>12</ngrad>
+    <initRamps></initRamps>
+    <NS>160</NS>
+    <NR>1</NR>
+    <DS>0</DS>
+    <dummyGrad>No</dummyGrad>
+    <nDummyGrad>0<YesNoValue>No</YesNoValue>
+    </nDummyGrad>
+    <showRampTime>0</showRampTime>
+    <rampUpTime>0.000</rampUpTime>
+    <rampDownTime>0.000</rampDownTime>
+    <gradstab>1.00<YesNoValue>Yes</YesNoValue>
+    </gradstab>
+    <spoil>0</spoil>
+    <spoilDur>2.000</spoilDur>
+    <gspoil>245.52</gspoil>
+    <t1Pars></t1Pars>
+    <topt></topt>
+</diff>
+

@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 328	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ 2023-06-16 11:38:50.824 +0200  nmr@lcs175n
+$$ /home/nmr/Data/Cassandre/13C_PEG600_8mm_diff/102/pdata/1/dosy
+$$ process /opt/topspin3.2/prog/au/bin/diff_t1pars
+##$Gamma= 1070.58392594692
+##$Gdist= 400
+##$Glen= 1
+##$Nexp= 1
+##$Npars= 7
+##$Nvar= 2
+##END=
