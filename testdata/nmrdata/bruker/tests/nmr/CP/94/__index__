@@ -1,6 +1,6 @@
 files:
-- vdlist
-- fid
 - acqus
+- fid
+- vdlist
 folders:
 - pdata
