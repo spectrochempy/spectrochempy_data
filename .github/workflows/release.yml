@@ -44,18 +44,10 @@ jobs:
       - name: Bump version from latest tag
         id: bump
         run: |
-          LATEST=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0")
+          LATEST=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0")
           VER=${LATEST#v}
           MAJOR=$(echo "$VER" | cut -d. -f1)
-          MINOR=$(echo "$VER" | cut -d. -f2)
-          PATCH=$(echo "$VER" | cut -d. -f3)
-          if [ -z "$PATCH" ]; then
-            # x.y → x.y+1
-            NEW_VER="$MAJOR.$((MINOR + 1))"
-          else
-            # x.y.z → x.y.z+1
-            NEW_VER="$MAJOR.$MINOR.$((PATCH + 1))"
-          fi
+          NEW_VER=$((MAJOR + 1))
           sed -i "s/set version = [0-9.]*/set version = $NEW_VER/" .conda/meta.yaml
           echo "old=$VER" >> $GITHUB_OUTPUT
           echo "new=$NEW_VER" >> $GITHUB_OUTPUT

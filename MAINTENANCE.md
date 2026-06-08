@@ -19,7 +19,7 @@ git push origin master
 **Le CI fait le reste :**
 - `rename_without_space.py` — remplace les espaces par `_` dans les noms de fichiers
 - `create_index_in_folder.py` — regénère les fichiers `__index__` YAML
-- Bump automatique du numéro de version (dernier tag + 0.1)
+- Bump automatique du numéro de version (incrément simple : v1 → v2 → v3...)
 - Tag `vX.Y` + GitHub Release créés
 - Build conda + upload sur Anaconda (`spectrocat` channel)
 
