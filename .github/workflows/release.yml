@@ -1,0 +1,111 @@
+name: 🚀 Auto-release on data update
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - testdata/**
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: "Simulate without committing or creating a release"
+        type: boolean
+        default: true
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.repository_owner == 'spectrochempy'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_RELEASE || github.token }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Run maintenance scripts
+        run: |
+          python scripts/rename_without_space.py
+          python scripts/create_index_in_folder.py
+
+      - name: Bump version (patch)
+        id: bump
+        run: |
+          VER=$(grep 'set version' .conda/meta.yaml | sed 's/.*= //')
+          MAJOR=$(echo "$VER" | cut -d. -f1)
+          MINOR=$(echo "$VER" | cut -d. -f2)
+          PATCH=$(echo "$VER" | cut -d. -f3)
+          if [ -z "$PATCH" ]; then
+            # x.y → x.y+1
+            NEW_VER="$MAJOR.$((MINOR + 1))"
+          else
+            # x.y.z → x.y.z+1
+            NEW_VER="$MAJOR.$MINOR.$((PATCH + 1))"
+          fi
+          sed -i "s/set version = $VER/set version = $NEW_VER/" .conda/meta.yaml
+          echo "old=$VER" >> $GITHUB_OUTPUT
+          echo "new=$NEW_VER" >> $GITHUB_OUTPUT
+
+      - name: Show changes (dry-run or diagnostic)
+        run: |
+          echo "=== Version bump: ${{ steps.bump.outputs.old }} → ${{ steps.bump.outputs.new }} ==="
+          echo ""
+          echo "--- Modified files ---"
+          git diff --stat
+          echo ""
+          echo "--- Script output (index changes) ---"
+          git diff testdata/__index__ testdata/*/__index__ 2>/dev/null || echo "(no index changes)"
+
+      - name: Check for actual changes
+        id: changes
+        run: |
+          if git diff --quiet -- testdata/ .conda/meta.yaml; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and tag (skip if dry-run or no changes)
+        if: |
+          github.event_name != 'workflow_dispatch'
+          && steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "spectrochempy-bot"
+          git config user.email "bot@spectrochempy.github.io"
+          git add testdata/__index__ testdata/*/__index__ .conda/meta.yaml
+          git commit -m "chore: auto-release ${{ steps.bump.outputs.new }} [skip ci]"
+          git push
+
+          TAG="v${{ steps.bump.outputs.new }}"
+          gh tag create "$TAG" -m "Release $TAG"
+          git push origin "$TAG"
+          gh release create "$TAG" \
+            --title "spectrochempy_data ${{ steps.bump.outputs.new }}" \
+            --notes "Automated release triggered by data update."
+        env:
+          GH_TOKEN: ${{ secrets.PAT_RELEASE || github.token }}
+
+      - name: Report what would happen (dry-run mode)
+        if: github.event_name == 'workflow_dispatch' && inputs.dry-run
+        run: |
+          echo "✅ Dry-run complete — no commits or releases were created."
+          echo ""
+          echo "To trigger a real release, re-run with dry-run: false"
+          echo "or push to master with testdata/ changes."
+
+      - name: Report skipped (no data changes)
+        if: steps.changes.outputs.has_changes == 'false'
+        run: echo "ℹ️ No changes detected in testdata/ — nothing to release."
