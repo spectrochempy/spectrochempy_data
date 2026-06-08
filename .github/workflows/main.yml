@@ -25,24 +25,20 @@ jobs:
     steps:
 
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v2
+      - name: Setup Miniconda
+        uses: conda-incubator/setup-miniconda@v3
         with:
-          python-version: 3.9
-
-      - name: Add conda to system path
-        run: |
-          # $CONDA is an environment variable pointing to the root of the miniconda directory
-          echo $CONDA/bin >> $GITHUB_PATH
+          auto-update-conda: true
+          python-version: "3.12"
+          channels: defaults
 
       - name: Build package
         run: |
-          conda update -n base -c defaults conda
-          conda install conda-build conda-verify
+          conda install conda-build
           conda-build .conda --output-folder out
 
       - name: Publish package for release

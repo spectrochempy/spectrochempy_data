@@ -1,0 +1,11 @@
+# Config and source files — enforce LF line endings
+*.sh          text eol=lf
+*.yml         text eol=lf
+*.yaml        text eol=lf
+*.md          text eol=lf
+*.py          text eol=lf
+.gitignore    text eol=lf
+.gitattributes text eol=lf
+
+# Everything else (including testdata/) — leave untouched
+*             -text
