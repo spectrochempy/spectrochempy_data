@@ -86,7 +86,7 @@ jobs:
         run: |
           git config user.name "spectrochempy-bot"
           git config user.email "bot@spectrochempy.github.io"
-          git add testdata/__index__ testdata/*/__index__ .conda/meta.yaml
+          git add 'testdata/**/__index__' .conda/meta.yaml
           git commit -m "chore: auto-release ${{ steps.bump.outputs.new }} [skip ci]"
           git push
 
