@@ -6,14 +6,22 @@ Seuls les **mainteneurs** du dépôt. `master` est protégé.
 
 ## Procédure normale (auto-release)
 
-```bash
-# 1. Ajouter les données
-cp -r ~/mes_mesures/* testdata/irdata/
+Deux options :
 
-# 2. Commit et push sur master
+**Direct push (simple, pas de review) :**
+```bash
 git add testdata/
 git commit -m "Add spectra from experiment XYZ"
 git push origin master
+```
+
+**Pull Request (recommandé si vous voulez un avis sur les données) :**
+```bash
+git checkout -b new-data
+git add testdata/
+git commit -m "Add spectra from experiment XYZ"
+git push origin new-data
+# Ouvrir une PR → merge sur master → auto-release
 ```
 
 **Le CI fait le reste :**
