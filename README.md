@@ -1,6 +1,6 @@
 # spectrochempy_data
 
-Test data and example files for [SpectroChemPy](https://github.com/spectrochempy/spectrochempy).
+Test and example data for [SpectroChemPy](https://github.com/spectrochempy/spectrochempy).
 
 [![CI](https://github.com/spectrochempy/spectrochempy_data/actions/workflows/main.yml/badge.svg)](https://github.com/spectrochempy/spectrochempy_data/actions/workflows/main.yml)
 
