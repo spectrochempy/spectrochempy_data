@@ -1,9 +1,9 @@
 files:
 - test.0001
-- background.0
-- test.0002
-- test.0000
-- OPUS_assembled_file.0
-- not_opus.spa
 - test.0003
+- test.0000
+- background.0
+- not_opus.spa
+- OPUS_assembled_file.0
+- test.0002
 folders: []
