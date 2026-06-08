@@ -1,5 +1,12 @@
 # AGENTS.md — spectrochempy_data
 
+**Rules for OpenCode agents:**
+- **Never commit, push, or create PRs unless explicitly instructed.**
+- Always wait for explicit approval before staging/committing any change.
+- This includes `git add`, `git commit`, `git push`, and `gh pr create`.
+- Only act when the user's prompt clearly requests it (e.g. "commit this").
+- If in doubt, show the diff and ask.
+
 **Purpose:** Test data & examples used by [SpectroChemPy](https://github.com/spectrochempy/spectrochempy).
 Published as `spectrochempy_data` on the `spectrocat` conda channel.
 
