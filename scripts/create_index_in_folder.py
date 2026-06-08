@@ -1,7 +1,7 @@
 from pathlib import Path
 import yaml
 
-REPO = Path.cwd().parent / "testdata"
+REPO = Path(__file__).resolve().parent.parent / "testdata"
 
 def write_index(path):
     files = []
