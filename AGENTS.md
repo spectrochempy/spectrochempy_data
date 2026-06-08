@@ -18,20 +18,13 @@ Published as `spectrochempy_data` on the `spectrocat` conda channel.
 
 No source code, no tests, no linter, no typechecker.
 
-## How to add data (maintainer, quick path)
+## How to add data
 
-Push new data files to `master` under `testdata/` — the release workflow handles the rest.
+Two paths:
 
-## Manual update (if not pushing to master)
+**External contributor** — fork, add data, open a PR. CI handles scripts and release on merge. See `CONTRIBUTING.md`.
 
-1. **Add or modify files** under `testdata/`.
-2. **Run both scripts** from the repo root:
-   ```bash
-   python scripts/rename_without_space.py   # replaces spaces with _ in filenames
-   python scripts/create_index_in_folder.py # regenerates __index__ YAML files
-   ```
-3. **Bump version** in `.conda/meta.yaml` (top-level `version` field).
-4. Commit and PR.
+**Maintainer (direct push to master)** — push to `master` under `testdata/`, the release workflow handles the rest. See `MAINTENANCE.md`.
 
 ## CI
 
