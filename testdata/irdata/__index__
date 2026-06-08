@@ -1,6 +1,6 @@
 files:
-- IR.CSV
 - nh4y-activation.spg
+- IR.CSV
 - CO@Mo_Al2O3.SPG
 folders:
 - OPUS
