@@ -20,7 +20,7 @@ No source code, no tests, no linter, no typechecker.
 
 ## How to add data (maintainer, quick path)
 
-Push new data files to `master` under `testdata/` — the release workflow handles the rest. See `audit/RELEASE_AUTOMATION_PLAN.md`.
+Push new data files to `master` under `testdata/` — the release workflow handles the rest.
 
 ## Manual update (if not pushing to master)
 
