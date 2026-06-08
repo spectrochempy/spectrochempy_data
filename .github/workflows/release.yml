@@ -41,10 +41,11 @@ jobs:
           python scripts/rename_without_space.py
           python scripts/create_index_in_folder.py
 
-      - name: Bump version (patch)
+      - name: Bump version from latest tag
         id: bump
         run: |
-          VER=$(grep 'set version' .conda/meta.yaml | sed 's/.*= //')
+          LATEST=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0")
+          VER=${LATEST#v}
           MAJOR=$(echo "$VER" | cut -d. -f1)
           MINOR=$(echo "$VER" | cut -d. -f2)
           PATCH=$(echo "$VER" | cut -d. -f3)
@@ -55,7 +56,7 @@ jobs:
             # x.y.z → x.y.z+1
             NEW_VER="$MAJOR.$MINOR.$((PATCH + 1))"
           fi
-          sed -i "s/set version = $VER/set version = $NEW_VER/" .conda/meta.yaml
+          sed -i "s/set version = [0-9.]*/set version = $NEW_VER/" .conda/meta.yaml
           echo "old=$VER" >> $GITHUB_OUTPUT
           echo "new=$NEW_VER" >> $GITHUB_OUTPUT
 
@@ -80,7 +81,7 @@ jobs:
 
       - name: Commit and tag (skip if dry-run or no changes)
         if: |
-          github.event_name != 'workflow_dispatch'
+          (github.event_name != 'workflow_dispatch' || !inputs.dry-run)
           && steps.changes.outputs.has_changes == 'true'
         run: |
           git config user.name "spectrochempy-bot"
