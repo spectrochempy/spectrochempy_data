@@ -42,3 +42,7 @@ Utile si le push sur master n'a pas déclenché la release (ex: bug fixé après
 | `release.yml` | Push sur `master` avec changement dans `testdata/` | Scripts, bump version, tag, release |
 
 Anaconda channel : `spectrocat`
+
+## Versioning
+
+Numérotation simple et séquentielle : `v1` → `v2` → `v3`... À chaque release, le numéro s'incrémente de 1. Pas de versionning sémantique.
