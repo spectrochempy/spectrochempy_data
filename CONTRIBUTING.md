@@ -19,6 +19,8 @@ Place them in the appropriate directory under `testdata/`:
 | `testdata/galacticdata/` | Galactic (Spectral) data |
 | `testdata/matlabdata/` | MATLAB data files |
 
+If none of the existing directories fit your data, **create a new one** (e.g. `testdata/xraydata/`). You can also add subdirectories for specific instruments or experiments, as done in `testdata/irdata/` (OPUS, omnic_series, interferogram, ...).
+
 **3. Commit and open a Pull Request**
 
 ```bash
