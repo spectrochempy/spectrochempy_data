@@ -3,6 +3,7 @@
 Test and example data for [SpectroChemPy](https://github.com/spectrochempy/spectrochempy).
 
 [![CI](https://github.com/spectrochempy/spectrochempy_data/actions/workflows/main.yml/badge.svg)](https://github.com/spectrochempy/spectrochempy_data/actions/workflows/main.yml)
+[![conda](https://img.shields.io/conda/v/spectrocat/spectrochempy_data)](https://anaconda.org/spectrocat/spectrochempy_data)
 
 ## Installation
 
