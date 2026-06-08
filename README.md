@@ -1,20 +1,25 @@
-Repository containing the example and test file for SpectroChemPy.  
+# spectrochempy_data
 
+Test data and example files for [SpectroChemPy](https://github.com/spectrochempy/spectrochempy).
 
-### Installation with conda
+[![CI](https://github.com/spectrochempy/spectrochempy_data/actions/workflows/main.yml/badge.svg)](https://github.com/spectrochempy/spectrochempy_data/actions/workflows/main.yml)
 
-Install a packaged version with conda or mamba:
+## Installation
 
 ```bash
-conda update conda
 mamba install -c spectrocat spectrochempy_data
 ```
 
-# Credits
+## Contributing
 
-* ramandata/wire files were downloaded from https://github.com/alchem0x2A/py-wdf-reader/releases/download/binary/spectra_files.zip
-and are licensed under the MIT License (MIT)
-* als2004dataset.mat was downloaded from https://www.cid.csic.es/homes/rtaqam/tmp/WEB_MCR/download_datasets.html
-* high_speed.srs was provided by @Micsyl (https://github.com/spectrochempy/spectrochempy/discussions/715)
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for external contributors and [`MAINTENANCE.md`](MAINTENANCE.md) for maintainers.
 
-to be completed...
+## Issues
+
+Report problems or request data via [GitHub Issues](https://github.com/spectrochempy/spectrochempy_data/issues).
+
+## Credits
+
+- `ramandata/wire` files — [py-wdf-reader](https://github.com/alchem0x2A/py-wdf-reader) (MIT License)
+- `als2004dataset.mat` — [MCR datasets](https://www.cid.csic.es/homes/rtaqam/tmp/WEB_MCR/download_datasets.html)
+- `high_speed.srs` — provided by @Micsyl ([discussion #715](https://github.com/spectrochempy/spectrochempy/discussions/715))
