@@ -1,14 +1,14 @@
 files:
-- acqu
-- acqu2
-- acqu2s
-- acqus
-- diff.xml
-- diffHistory.txt
-- difflist
-- diffParOut
-- fq1list
-- pulseprogram
 - ser
+- diff.xml
+- acqu2s
+- diffParOut
+- difflist
+- pulseprogram
+- diffHistory.txt
+- fq1list
+- acqu
+- acqus
+- acqu2
 folders:
 - pdata
