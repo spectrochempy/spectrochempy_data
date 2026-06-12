@@ -1,7 +1,7 @@
 files:
-- acqu
-- acqus
 - pulseprogram
 - fid
+- acqu
+- acqus
 folders:
 - pdata

@@ -3,8 +3,8 @@ files:
 - IR.CSV
 - CO@Mo_Al2O3.SPG
 folders:
-- OPUS
 - subdir
-- interferogram
+- OPUS
 - omnic_series
 - carroucell_samp
+- interferogram

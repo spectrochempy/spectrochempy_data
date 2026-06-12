@@ -1,10 +1,10 @@
 files:
-- acqu
-- acqus
+- pulseprogram
 - ser
 - acqu2
-- pulseprogram
-- vdlist
 - acqu2s
+- acqu
+- acqus
+- vdlist
 folders:
 - pdata

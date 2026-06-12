@@ -1,9 +1,9 @@
 files:
-- outd
 - baslpnts
-- auditp.txt
-- proc
-- procs
-- intrng
 - base_info
+- proc
+- intrng
+- auditp.txt
+- outd
+- procs
 folders: []
