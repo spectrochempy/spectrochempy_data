@@ -1,4 +1,4 @@
-# spectrochempy-data
+# spectrochempy_data
 
 Test and example data for [SpectroChemPy](https://github.com/spectrochempy/spectrochempy).
 
