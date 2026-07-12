@@ -11,6 +11,31 @@ Test and example data for [SpectroChemPy](https://github.com/spectrochempy/spect
 mamba install -c spectrocat spectrochempy_data
 ```
 
+## Data branches
+
+This repository uses two branches to separate data by purpose:
+
+| Branch | Content | Size |
+|---|---|---|
+| `master` | Test-essential data (used by CI and unit tests) | ~60 MB |
+| `data-extra` | Extra datasets for reader development (agilent, jeol, bruker_3d, simpson, tecmag) | ~300 MB |
+
+The `master` branch is downloaded automatically by SpectroChemPy at startup (via `scp.read()`).
+Extra data must be fetched explicitly.
+
+## Fetching extra data
+
+```bash
+# CLI
+python scripts/fetch_extra.py
+
+# Python
+from spectrochempy.application.testdata import download_extra_testdata
+download_extra_testdata()
+```
+
+Extra data is cloned into `~/.spectrochempy/testdata-extra/`.
+
 ## Contributing
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md) for external contributors and [`MAINTENANCE.md`](MAINTENANCE.md) for maintainers.

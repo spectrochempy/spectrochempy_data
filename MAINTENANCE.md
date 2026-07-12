@@ -1,5 +1,12 @@
 # Maintenance — spectrochempy_data
 
+## Branches
+
+| Branch | Purpose | CI |
+|---|---|---|
+| `master` | Test-essential data | Auto-release on push, conda build |
+| `data-extra` | Extra datasets for reader development | No CI (raw data only) |
+
 ## Qui peut déclencher une release ?
 
 Seuls les **mainteneurs** du dépôt. `master` est protégé.
@@ -26,10 +33,21 @@ git push origin new-data
 
 **Le CI fait le reste :**
 - `rename_without_space.py` — remplace les espaces par `_` dans les noms de fichiers
-- `create_index_in_folder.py` — regénère les fichiers `__index__` YAML
+- `create_index_in_folder.py` — régénère les fichiers `__index__` YAML
 - Bump automatique du numéro de version (incrément simple : v1 → v2 → v3...)
 - Tag `v<N>` + GitHub Release créés
 - Build conda + upload sur Anaconda (`spectrocat` channel)
+
+## Ajouter des données sur data-extra
+
+```bash
+git checkout data-extra
+git add testdata/nmrdata/<new_reader>/
+git commit -m "Add <reader> datasets for development"
+git push origin data-extra
+```
+
+Pas de release ni de bump de version — c'est une branche de données brutes.
 
 ## Relâche manuelle
 

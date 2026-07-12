@@ -1,5 +1,15 @@
 # Contributing to spectrochempy_data
 
+## Which branch should I use?
+
+| Your data is... | Branch | Why |
+|---|---|---|
+| Used by existing tests or examples | `master` | CI downloads this branch automatically |
+| For developing new readers (not yet in tests) | `data-extra` | Keeps the main download lightweight (~60 MB vs ~540 MB) |
+| Unsure | `master` | When in doubt, start here |
+
+**Rule of thumb:** if a test in `spectrochempy` references your file, it goes on `master`. Otherwise, `data-extra`.
+
 ## For external contributors (via Pull Request)
 
 **1. Fork the repository**
