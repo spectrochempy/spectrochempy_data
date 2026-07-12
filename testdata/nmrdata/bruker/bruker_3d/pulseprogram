@@ -1,0 +1,466 @@
+# 1 "/u/exp/stan/nmr/lists/pp/hnca-fb+3919.cpj"
+# 1 "/u/exp/stan/nmr/lists/pp/Avance.incl" 1
+;Avance.incl
+;
+;avance-version (03/02/17)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;$Id: Avance1.incl,v 1.7.2.3 2003/02/25 14:48:47 ber Exp $
+# 1 "/u/exp/stan/nmr/lists/pp/hnca-fb+3919.cpj" 2
+
+# 1 "/u/exp/stan/nmr/lists/pp/Grad.incl" 1
+;Grad.incl  -  include file for Gradient Spectroscopy
+;
+;avance-version (02/05/31)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define list<gradient> EA=<EA>
+
+
+
+;$Id: Grad1.incl,v 1.7 2002/06/12 09:04:22 ber Exp $
+# 2 "/u/exp/stan/nmr/lists/pp/hnca-fb+3919.cpj" 2
+
+
+;3D HNCO, regular CO evolution, semi-CT 15N evolution
+
+;cnst22 ppm offset for CO sel. pulses
+;p1 hard 1H 90 @ pl1
+;p30 = 90 deg (60us) 1H pulse @pl30
+;p7 = 90 deg (50us) 15N pulse @pl7
+;p31 = 90 deg (180us) 15N pulse @pl31
+;p5 = selective 90 deg (53.0us) 13CA pulse @pl5
+;p4 = selective 180 deg (23.7*2us) 13CA pulse @pl4
+;p6 = 180 deg (151us=180deg) 13C pulse @sp1 using sinc1.0
+;p14 = p4*2 selective 180 deg (23.7*2 us) 13CO pulse @sp14 using rectangular pulse
+
+
+
+
+
+define loopcounter LOOPN
+define loopcounter LOOPC
+
+;--- Frequency for off-resonance selective pulses, define cnst22 in ppm in ased window ---
+"spoff1=bf2*(cnst22/1000000)-o2"
+
+;--- Disk I/O delays ---
+"d11=50m"
+"d12=1m"
+
+;--- Experiment delays (optmimize as needed) ---
+"d2=2.3m-p21-p11-10u"	   ; ~1/4JNH - optimize between ~2.25-2.65 ms
+"d3=2.3m-p22-p11*2-15u"
+"d4=2.3m-p23-p11-15u"
+"d5=2.3m-p23-p11*2-15u"
+"d6=12.5m"	 	   ; ~1/4JNC - optimize between ~12-16 ms
+"d7=p24+p1*0.6366-p25"
+"d9=5.4m"	 	   ; 1/2JNH for NH rephasing
+"d13=d6-d9-p1-15u"
+"d19=50u"		   ; delay for 3-9-19 H2O suppression (50u on 800, 100u on 600)
+"d26=p7-p1"
+"d28=p7-0.5*p14"
+
+
+ "d29=p6*0.5-p7"
+
+
+;---- 13C and 15N evolution parameters ----
+
+"LOOPN=64"  
+"LOOPC=58"
+
+;-----13C Evolution -----
+
+; CA, carrier at ~56ppm (parameters for SW ~33 ppm)
+; 600: in10 = 100u (i.e., 200u increment)
+; 800: in10 = 75u (i.e., 150u increment)
+; use total evolution ~10 ms (to avoid CACB J-mod), CLOOP = ~ 50 (600) / 64 (800)
+
+; CO, carrier at ~175ppm (parameters for SW ~20 ppm)
+; 600: in10 = 165u (i.e., 330u increment)
+; 800: in10 = 125u (i.e., 250u increment)
+; (parameters for SW ~20 ppm)
+; 600: in10 = 330u (i.e., 660u increment)
+; 800: in10 = 250u (i.e., 500u increment)
+; use total evolution ~20-30 ms as expt. time permits, CLOOP = ~ 75 (600) / 64-128 (800)
+
+
+   "d10=5u"				; 0 phase correction
+;  "d10 = in10 - p5*0.63 - p7"		; 180/-360 phase correction
+
+
+;----- 15N evolution (semi-CT) ------
+; 4*d22 CT evolution + additional evolution possible
+; total increment = 2*in22 + in24+ in23 + in25 = 3*in22+in24+in23 = 2*(in22+in24)
+
+; for 700u increment (~23.5 ppm SW on 600 instrument)
+; in22 = 170u
+; in23 = 10u
+; in24 = 180u
+; in25 = 170u
+; with NLOOP = 36, this results in 35*700u = ~24.5 ms of 15N evolution and uses up entire CT
+; with minimal additional relaxation losses (for longer 15N evolution, decrease in22 and in25
+; and increase in23 and in24 appropriately)
+
+; for 600u increment use
+; in22 = 140u
+; in23 = 20u
+; in24 = 160u
+; in25 = 140u
+; with NLOOP = 40 -> 39*600u = 23.4m of 15N evolution
+
+; for 400u increment (~ entire CT used for freq. labeling)
+; in22 = 95u
+; in23 = 10u
+; in24 = 105u
+; in25 = 95u
+; with NLOOP = 66 -> 65*400u = 26.0m of 15N evolution 
+
+"d21=d9-p1-20u-p26-300u"	
+"d22=6.25m"			; in22 ~ d22/NLOOP
+"d23=10u"			; in23 = in24 - in25
+"d25=d22-p14-d23"		; in25 = in22
+"d24=d22-d9"			; in24 = set for desired SW
+
+1	ze
+	d12
+	10u
+	10u
+2	10u 
+	d11 do:f3
+3	d12*3.0
+4	d12*3.0
+5	d12*3.0
+6	50u do:f3
+7	5u do:f2
+        10u
+	10u pl5:f2
+	d1 setnmr2^0 setnmr0^34^32^33
+	1m setnmr2|0 setnmr0|34|32|33
+	10u pl1:f1
+	10u pl3:f3
+;------- start 90-degree on N and C to get rid of boltzmann ---------
+	(p7 ph0):f3 (p5 ph0):f2
+	5u
+        p18:gp18             
+	1m pl0:f1
+;------- start 90-degree on hn -----------------------
+        (p11:sp11 ph12:r):f1		
+        5u pl1:f1
+	(p1 ph0):f1
+        5u
+  	p21:gp21			
+  	d2 pl0:f1
+  	(p11:sp11 ph12:r):f1
+  	5u pl1:f1
+  	(d26 p1*2 ph0):f1 (p7*2 ph0):f3
+  	5u pl0:f1
+  	(p11:sp11 ph12:r):f1
+  	5u pl1:f1
+  	p21:gp21
+  	d2
+  	(p1 ph1)			
+  	5u pl0:f1 
+  	(p11:sp11 ph13:r):f1
+  	5u
+  	p20:gp20	      
+	5u
+  	300u
+	(p7 ph7):f3
+;-------------- end inept to N ----------------------
+        d9
+        (p1 ph1):f1             
+        5u pl30:f1
+        5u cpds1:f1		; DIPSI-2
+	5u		
+        d13 pl14:f2
+	(d28 p14 ph0):f2 (p7*2 ph7):f3
+	d6 
+	(p7 ph7):f3
+	5u
+	5u do:f1                ;H decoupling off
+        5u pl1:f1 
+        (p1 ph3):f1	
+	5u
+        p19:gp19                ;1m @ 50y
+	300u pl5:f2
+        (p1 ph1):f1             ;trim pulse
+        5u pl30:f1
+        5u cpds1:f1
+	5u
+;------------- start evolution on CO ---------------------------
+	(p5 ph20):f2
+
+	d10 pl0:f2
+        (d29 p7*2 ph7):f3 (p6:sp1 ph0):f2    ;CO 180
+	d10 pl14:f2
+	(p14 ph0):f2
+	5u pl0:f2
+        (d29 p7*2 ph7):f3 (p6:sp1 ph0):f2	; CO BSP compensation pulse
+	5u pl5:f2
+
+
+
+
+
+	(p5 ph21):f2
+	5u
+	5u do:f1                ;H decoupling off
+        5u pl1:f1 
+        (p1 ph3):f1
+	5u
+        p19:gp19                
+	300u pl0:f2
+        (p1 ph1):f1              ;H decoupling on
+        5u pl30:f1
+        5u cpds1:f1
+;--------------- start CT evolution on N -------------------
+	(p7 ph7):f3
+	d22 pl0:f2
+	(p6:sp1 ph0):f2	       ; CO 180
+    	d22
+	(p7*2 ph7):f3
+        d23 pl14:f2
+	(p14 ph0):f2		; CA 180
+	d25 pl0:f2
+	(p6:sp1 ph0):f2	        ; CO 180
+	d24
+	10u do:f1                ;H decoupling off
+        10u pl1:f1
+        (p1 ph3):f1               ;trim pulse
+        d21 pl1:f1
+        p26:gp26*EA               ;coherence encoding gradient
+        300u
+;--------- end CT evolution on N --------------------
+;--------- Rance-Kay transfer back to 1H ------------
+  (p7 ph9):f3 (d26 p1 ph0):f1
+  5u pl0:f1
+  (p11:sp11 ph12:r)  
+  5u
+  p22:gp22			
+  d3				
+  (p11:sp11 ph12:r)
+  5u pl1:f1
+  (d26 p1*2 ph0) (p7*2 ph7):f3
+  5u pl0:f1
+  (p11:sp11 ph12:r)
+  5u
+  p22:gp22			
+  d3
+  (p11:sp11 ph13:r)
+  5u pl1:f1
+  (p1 ph5) (p7 ph8):f3
+  10u pl0:f1
+  p23:gp23			; gp23 = 1.5m, 31%
+  d4
+  (p11:sp11 ph15:r)
+  5u pl1:f1
+  (d26 p1*2 ph2) (p7*2 ph7):f3				
+  5u pl0:f1
+  (p11:sp11 ph15:r)
+  5u
+  p23:gp23			; gp23 = 1.5m, 31%
+  d5
+  (p11:sp11 ph15:r) 
+  5u pl1:f1
+  (p1 ph2)			
+;--- 3-9-19 readout + coherence decoding ---
+  5u pl16:f3
+  p24:gp24			; coherence decoding gradient + watergate, gp24 = 202.6u + p25
+  200u pl18:f1
+  p28*0.231 ph10			
+  d19*2				
+  p28*0.692 ph10		
+  d19*2
+  p28*1.462 ph10
+  d19*2
+  p28*1.462 ph11
+  d19*2
+  p28*0.692 ph11
+  d19*2
+  p28*0.231 ph11
+  5u
+  p25:gp25
+  195u
+  d7
+  5u setnmr2^0 setnmr0^34^32^33
+
+  go=2 ph31 cpd3:f3
+  10u do:f3
+  1m
+  d11 wr #0 if #0 zd
+
+
+d12 ip9 igrad EA
+d12*0.5 ip9
+lo to 3 times 2
+d12*0.5
+d12 dd22			; 15N semi-CT evolution
+d12 id23			; increment = 2*in22 + in24 + in23 + in25
+d12 id24
+d12 id25
+lo to 4 times LOOPN 
+d12*0.5 rd22
+d12*0.5 rd23
+d12*0.5 rd24
+d12*0.5 rd25
+
+
+d12 ip20
+lo to 5 times 2
+d12 id10
+d12 ip31
+d12 ip31
+lo to 7 times LOOPC
+
+d12 
+d12 do:f2
+d12 do:f3
+exit	
+	
+ph0=0
+ph1=1
+ph2=2
+ph3=3
+ph5=1
+ph7=0
+ph8=1
+ph9=2
+ph10=0 0 			;1 1
+ph11=2 2 			;3 3
+ph12=2
+ph13=3
+ph15=0
+ph20=0 2
+ph21=0
+ph31=0 2 			;2 0

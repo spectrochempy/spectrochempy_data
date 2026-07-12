@@ -6,6 +6,14 @@
 *.py          text eol=lf
 .gitignore    text eol=lf
 .gitattributes text eol=lf
-
 # Everything else (including testdata/) — leave untouched
 *             -text
+testdata/nmrdata/**/fid filter=lfs diff=lfs merge=lfs -text
+testdata/nmrdata/**/ser filter=lfs diff=lfs merge=lfs -text
+testdata/irdata/**/*.srs filter=lfs diff=lfs merge=lfs -text
+testdata/irdata/**/*.SPG filter=lfs diff=lfs merge=lfs -text
+testdata/irdata/**/*.spg filter=lfs diff=lfs merge=lfs -text
+testdata/irdata/**/*.0 filter=lfs diff=lfs merge=lfs -text
+testdata/nmrdata/**/*.jdf filter=lfs diff=lfs merge=lfs -text
+testdata/nmrdata/**/pdata/**/2* filter=lfs diff=lfs merge=lfs -text
+testdata/ramandata/**/*.wdf filter=lfs diff=lfs merge=lfs -text
