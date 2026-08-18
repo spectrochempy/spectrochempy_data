@@ -1,11 +1,11 @@
 files:
 - nh4y-activation.spg
-- IR.CSV
 - CO@Mo_Al2O3.SPG
+- IR.CSV
 folders:
-- subdir
 - OPUS
 - omnic_series
 - carroucell_samp
 - perkinelmer
 - interferogram
+- subdir
