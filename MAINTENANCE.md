@@ -57,8 +57,8 @@ Utile si le push sur master n'a pas déclenché la release (ex: bug fixé après
 
 ## Prérequis
 
-- **`PAT_RELEASE`** : Personal Access Token (scope `repo`) dans les secrets du dépôt (Settings → Secrets and variables → Actions)
-- Le workflow utilise ce token pour push sur `master` protégé et créer la release
+- **`github.token`** : le workflow utilise le token automatique de GitHub Actions (`github.token`) pour pusher sur `master` et créer la release. Aucun secret PAT n'est requis.
+- `PAT_RELEASE` (ancien) : supprimé. Ne pas le recréer.
 
 ## CI
 
