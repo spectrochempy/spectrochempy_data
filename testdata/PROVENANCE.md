@@ -256,6 +256,12 @@ That manifest identifies the matched files as originals from the **nmrglue v0.5
 release archive**. It distinguishes the repository's BSD-3-Clause software
 licence from the release data's still-`UNRESOLVED` redistribution status.
 
+This follows the **review-corrected** conclusions of
+[nmrglue-ng PR #39](https://github.com/spectrochempy/nmrglue-ng/pull/39), not its
+initial summary attributing BSD-3-Clause to the data. Its 116 locally generated
+NMRPipe reference files are separate from the 29 matched originals and are not
+part of these additions to `data-extra`.
+
 | Paths under `testdata/nmrdata/` on data-extra | Matched files | Comparison |
 | --- | --- | --- |
 | `agilent/agilent_{1d,2d,2d_tppi,3d,4d}/` | 9 | Four parameter-file SHA-256 hashes and five LFS object IDs |
@@ -281,6 +287,25 @@ The five `jeol/` files have no counterpart in that manifest:
 Their source and permission must be supplied or independently recovered. The
 CC0 declaration for NMRXiv datasets discussed below does not apply to these
 unidentified files merely because they use the same instrument format.
+
+The newer packaged fixtures in nmrglue-ng are a separate, documented source of
+replacement candidates:
+
+- [PR #40](https://github.com/spectrochempy/nmrglue-ng/pull/40), merged: JEOL
+  fluorine/phosphorus from cheminfo (MIT with notice), plus Rutin 1H/13C from
+  Harvard Dataverse `10.7910/DVN/ZAZDNM` (CC0 1.0).
+- [PR #41](https://github.com/spectrochempy/nmrglue-ng/pull/41), merged: Bruker
+  sucrose 1D (NMRXiv P52), HSQC and COSY (P33), under CC0 1.0.
+- [PR #42](https://github.com/spectrochempy/nmrglue-ng/pull/42), open at this
+  assessment: Epicatechin JEOL HSQC and JCAMP-DX fixtures (P33), documented CC0.
+
+Refer to those PRs and their per-file notices for the provenance and validation
+work already completed. They do not clear the legacy corpus's rights and do
+not provide like-for-like replacements for every Agilent, 3D, COSY or HMBC case.
+[Coordinated PR #27](https://github.com/spectrochempy/spectrochempy_data/pull/27),
+targeting `data-extra`, provides its branch-local `DATA_EXTRA_PROVENANCE.md`
+and `data-extra-manifest.json` with exact paths, sizes and checksums based on
+the same reference manifest.
 
 ### Replacement candidates for the TopSpin exam2d examples
 
@@ -360,9 +385,10 @@ Before removing the vendor examples, validate processed HSQC quaternion
 components and coordinates, raw HSQC/COSY encoding, and directory discovery in
 SpectroChemPy. New shape/value assertions must follow the source files and
 reader normalization, not merely be adjusted until the old test passes.
-The single data-repository PR can include the replacement data and provenance;
+The main-corpus data PR can be extended with replacement data and provenance;
 consumer changes are in the separate SpectroChemPy repository and must be
-coordinated before retiring the old paths.
+coordinated before retiring the old paths. Branch-specific provenance for
+`data-extra` is maintained through the coordinated PR #27.
 
 ## Maintaining this register
 
