@@ -34,6 +34,6 @@ Report problems or request data via [GitHub Issues](https://github.com/spectroch
 
 ## Credits
 
-- `ramandata/wire` files — [py-wdf-reader](https://github.com/alchem0x2A/py-wdf-reader) (MIT License)
+- `ramandata/wire` files — [py-wdf-reader](https://github.com/alchem0x2A/py-wdf-reader) (upstream repository: MIT; binary dataset licence coverage remains to be confirmed)
 - `als2004dataset.mat` — [MCR datasets](https://www.cid.csic.es/homes/rtaqam/tmp/WEB_MCR/download_datasets.html)
 - `high_speed.srs` — provided by @Micsyl ([discussion #715](https://github.com/spectrochempy/spectrochempy/discussions/715))
