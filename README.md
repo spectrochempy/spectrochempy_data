@@ -44,8 +44,19 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for external contributors and [`MAINTEN
 
 Report problems or request data via [GitHub Issues](https://github.com/spectrochempy/spectrochempy_data/issues).
 
+## Data provenance and licensing
+
+The LCS datasets explicitly listed in [`testdata/PROVENANCE.md`](testdata/PROVENANCE.md)
+are licensed under **CC BY 4.0**, with attribution to LCS. That register defines
+the covered files, attribution and licence links, and the datasets whose origin
+or redistribution terms still need clarification, including SRS files.
+
+There is no blanket licence covering all datasets in this repository.
+
 ## Credits
 
-- `ramandata/wire` files — [py-wdf-reader](https://github.com/alchem0x2A/py-wdf-reader) (MIT License)
+- `ramandata/wire` files — [py-wdf-reader](https://github.com/alchem0x2A/py-wdf-reader) (upstream repository: MIT; binary dataset licence coverage remains to be confirmed)
 - `als2004dataset.mat` — [MCR datasets](https://www.cid.csic.es/homes/rtaqam/tmp/WEB_MCR/download_datasets.html)
+- `dna_data.mat` — [CSIC DNA UV/CD dataset](https://www.cid.csic.es/homes/rtaqam/tmp/WEB_MCR/download_dataOligo.html); source archive match verified, data licence to clarify
+- Original Galactic SPC collection — [hySpc.read.spc](https://github.com/r-hyperspec/hySpc.read.spc); source file matches verified, original SDK data rights to clarify (see the provenance register)
 - `high_speed.srs` — provided by @Micsyl ([discussion #715](https://github.com/spectrochempy/spectrochempy/discussions/715))
