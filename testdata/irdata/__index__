@@ -3,6 +3,7 @@ files:
 - CO@Mo_Al2O3.SPG
 - IR.CSV
 folders:
+- 2dir
 - OPUS
 - omnic_series
 - carroucell_samp
