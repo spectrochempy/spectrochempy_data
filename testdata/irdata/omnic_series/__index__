@@ -1,7 +1,7 @@
 files:
 - rapid_scan_reprocessed.srs
+- rapid_scan.srs
+- GC_Demo.srs
 - TGA_demo.srs
 - high_speed.srs
-- GC_Demo.srs
-- rapid_scan.srs
 folders: []

@@ -1,10 +1,10 @@
 files:
-- acqu2s
 - audita.txt
-- acqu
-- acqus
-- ser
 - pulseprogram
+- acqus
+- acqu2s
+- ser
+- acqu
 - acqu2
 folders:
 - pdata

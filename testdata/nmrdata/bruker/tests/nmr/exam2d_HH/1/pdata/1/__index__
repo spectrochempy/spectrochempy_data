@@ -1,11 +1,11 @@
 files:
-- thumb.png
-- procs
 - 2rr
+- procs
+- auditp.txt
+- proc2
+- thumb.png
+- title
 - proc2s
 - proc
-- proc2
-- title
-- auditp.txt
 - clevels
 folders: []
