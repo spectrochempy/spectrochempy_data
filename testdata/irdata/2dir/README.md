@@ -5,6 +5,10 @@ signal measured at a waiting time of 0.000 ps. The first row contains the pump
 wavenumbers; the first column contains the probe wavenumbers. The remaining
 values are the measured difference absorbance.
 
+`silicalite_210C_0ps_2DIR.scp` contains the same cropped matrix in native
+SpectroChemPy format, with probe and pump coordinates and signal units attached.
+It is derived directly from the CSV above without further signal processing.
+
 ## Provenance and license
 
 Donaldson, Hawkins & Howe, “Distinctive signatures and ultrafast dynamics of
