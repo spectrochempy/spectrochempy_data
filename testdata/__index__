@@ -1,5 +1,6 @@
 files:
 - wodger.spg
+- PROVENANCE.md
 folders:
 - matlabdata
 - galacticdata
