@@ -1,0 +1,22 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 204	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ 2014-05-02 11:31:30.237 +0200  christian@macbookcf.local
+$$ /Users/christian/Documents/data_storage/bruker/Data/PST5_MQMAS/51/acqu2s
+$$ process /opt/topspin3.2/prog/au/bin/xfshear
+##$ACQT0= 0
+##$BF1= 184.598412833333
+##$FnMODE= 4
+##$NUC1= <27Al>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 128
+##$O1= -489.6
+##$SFO1= 184.597719233333
+##$SW= 75.8709403194701
+##$SW_h= 14005.6022408964
+##$TD= 128
+##END=
