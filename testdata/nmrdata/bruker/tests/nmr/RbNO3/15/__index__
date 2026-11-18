@@ -1,8 +1,8 @@
-folders:
-- pdata
 files:
 - acqu
-- acqu2
 - acqu2s
-- acqus
 - ser
+- acqus
+- acqu2
+folders:
+- pdata
