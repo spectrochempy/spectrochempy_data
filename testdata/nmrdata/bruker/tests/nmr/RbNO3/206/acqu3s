@@ -1,0 +1,22 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 15	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ 2014-11-18 15:29:55.952 +0100  nmr@lcs185n
+$$ /home/nmr/data/aurelie/nmr/RbNO3/206/acqu3s
+$$ process /opt/topspin3.2/prog/mod/go
+##$ACQT0= 0
+##$BF1= 163.625174
+##$FnMODE= 4
+##$NUC1= <87Rb>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 14
+##$O1= -2384.18
+##$SFO1= 163.62278982
+##$SW= 24.0047842755434
+##$SW_h= 3927.72977219167
+##$TD= 14
+##END=

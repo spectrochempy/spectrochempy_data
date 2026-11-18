@@ -1,3 +1,7 @@
-files: []
 folders:
 - bruker
+- jeol
+- nmrpipe
+files:
+- PROVENANCE.md
+- example-data.sha256
