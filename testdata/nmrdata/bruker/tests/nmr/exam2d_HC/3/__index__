@@ -1,9 +1,9 @@
 files:
 - acqu
-- pulseprogram
-- acqu2s
-- ser
 - acqus
 - acqu2
+- pulseprogram
+- ser
+- acqu2s
 folders:
 - pdata

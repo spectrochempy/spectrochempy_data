@@ -1,6 +1,6 @@
 files:
 - acqu
-- fid
 - acqus
+- fid
 folders:
 - pdata

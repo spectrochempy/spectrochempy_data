@@ -1,14 +1,14 @@
 files: []
 folders:
 - topspin_1d
-- h3po4
-- RbNO3
+- alumina_800C
+- cadmium
+- exam2d_HH
 - exam2d_HC
 - MQMAS_27AL_PST5
+- RbNO3
+- h3po4
 - topspin_2d
-- cadmium
-- alumina_800C
+- CP
 - relax
 - MULTIPLEX
-- exam2d_HH
-- CP

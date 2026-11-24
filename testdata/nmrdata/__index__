@@ -3,5 +3,5 @@ files:
 - PROVENANCE.md
 folders:
 - jeol
-- nmrpipe
 - bruker
+- nmrpipe

@@ -1,10 +1,10 @@
 files:
 - acqu3s
 - acqu
-- acqu2s
-- ser
 - acqus
-- acqu3
 - acqu2
+- ser
+- acqu2s
+- acqu3
 folders:
 - pdata
