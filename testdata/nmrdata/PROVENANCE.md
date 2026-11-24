@@ -62,3 +62,22 @@ unchanged. For STMAS, the observed F2 nucleus determines the physical spin
 and shear geometry; the unused default isotope in the F1 header is not a
 constraint. The indirect time increment still determines the F1 frequency
 spacing. Supplying these data alone does not certify scientific referencing.
+
+## PEG 600 PFG — provenance clarification, 24 November 2026
+
+This clarification concerns `bruker/tests/nmr/relax/102`, already present
+before the additions covered by the checksum notice above. Christian
+Fernandez states that he did not create this measurement and identifies
+Cassandre Kouvatas as its author. The archive records acquisition
+on 16 June 2023 under `nmr@lcs175n`, in a path containing
+`Cassandre/13C_PEG600_8mm_diff/102`, and F2 reprocessing on 30 June under
+the Windows account `Cassandre`. The maintainer confirms Cassandre Kouvatas
+as the measurement author.
+
+Christian Fernandez imported the files through
+[data PR #22](https://github.com/spectrochempy/spectrochempy_data/pull/22)
+on 5 July 2023. Repository contribution does not establish measurement
+authorship. The maintainer confirms CC BY 4.0 for this acquisition,
+the same licence as his files. Credit **Cassandre Kouvatas** as the measurement author and
+retain the [CC BY 4.0 licence link](https://creativecommons.org/licenses/by/4.0/).
+Pulse-program text is excluded. Raw metadata and measurement bytes are unchanged.
